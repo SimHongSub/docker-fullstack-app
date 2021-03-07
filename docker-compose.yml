@@ -27,6 +27,12 @@ services:
     volumes:
       - /app/node_modules
       - ./backend:/app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: fullstack123
+      MYSQL_DATABASE: myapp
+      MYSQL_PORT: 3306
 
 # 도커를 이용한 mysql 사용 환경 설정
 #  mysql:
